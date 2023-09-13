@@ -50,22 +50,20 @@ Desenvolvimento de um site dedicado à conscientização e engajamento para a co
 Link para teste da versão disponibilizada.
 
 ## Pré-requisitos ⚠️    
-Versão do Android; 
-SDK; 
-Aparelho utilizado para testes.
-- Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação, para rodar o projeto.
+Navegador capaz de exibir o site.
 
 ## Como rodar a aplicação 
-Rodar em navegador que suporta o projeto
+Rodar em navegador que suporta o projeto.
 
 ## Testes realizados
 Utilização de imagens e descrição do qeu foi testado.
 
 ## Banco de Dados 🗂️
 Caso tenha acesso a uma base de dados, deixe a descrição do arquivo (json, csv, xml e etc).
+json
 
 ## Linguagens, dependencias e libs utilizadas 📚
-HTML, Javascript, CSS, Bootstrap, 
+HTML, Javascript, CSS, Bootstrap 
 
 XML
 ...
