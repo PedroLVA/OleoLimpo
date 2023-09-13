@@ -47,7 +47,7 @@ Desenvolvimento de um site dedicado à conscientização e engajamento para a co
 
 
 ## Distribuição
-Link para teste da versão disponibilizada.
+Ainda não há distribuição
 
 ## Pré-requisitos ⚠️    
 Navegador capaz de exibir o site.
@@ -67,10 +67,10 @@ HTML, Javascript, CSS, Bootstrap
 
 XML
 ...
-Liste as tecnologias utilizadas no projeto que não forem reconhecidas pelo Github
+Ainda não foram detectadas as tecnologias.
 
 ## Resolvendo Problemas 
-Em issues foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos.
+Issues ainda não foram abertas.
 
 ## Recursos de inseridos 🧰
 Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação, insira fotos da tela do app.
