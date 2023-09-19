@@ -95,4 +95,4 @@ Raphael Carneiro Gomes, carneirogomesraphael@gmail.com
 ## Licença
 The MIT License (MIT)
 
-## Copyright ©️ 2023 - Oleo do Bem
+## Copyright ©️ 2023 - Óleo Limpo
