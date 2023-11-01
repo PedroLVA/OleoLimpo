@@ -1,6 +1,6 @@
 # Óleo Limpo
-## Versão: 1.0 
-## Status do Projeto: ⚠️ Espera 
+## Versão: 1.1 
+## Status do Projeto: ⚠️ Em desenvolvimento
 
 ## Tópicos
 🔹 Descrição do projeto 
@@ -75,11 +75,14 @@ Issues ainda não foram abertas.
 ## Recursos de inseridos 🧰
 Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação, insira fotos da tela do app.
 
-📝 Tarefa 1
+📝 Tela de Login
 
-📝 Tarefa 2
+📝 Tela de Doação
 
-📝 Tarefa 3
+📝 Tela de Cadastro de Empresa
+
+📝 Tela de Confirmação de Doação
+
 
 ## Desenvolvedores/Contribuintes:
 Pedro Luiz Vidal Athayde,  pedro_athayde@outlook.com,
