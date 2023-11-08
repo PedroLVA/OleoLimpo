@@ -1,5 +1,5 @@
 # Óleo Limpo
-## Versão: 1.1 
+## Versão: 1.2 
 ## Status do Projeto: ⚠️ Em desenvolvimento
 
 ## Tópicos
@@ -43,6 +43,8 @@ Desenvolvimento de um site dedicado à conscientização e engajamento para a co
 
 ✔️ Página de Login
 
+✔️ Área do doador
+
 ✔️ Área de admin
 
 
@@ -53,17 +55,16 @@ Ainda não há distribuição
 Navegador capaz de exibir o site.
 
 ## Como rodar a aplicação 
-Rodar em navegador que suporta o projeto.
+Rodar em navegador que suporta as tecnologias utilizadas (css, html, php).
 
 ## Testes realizados
-Utilização de imagens e descrição do qeu foi testado.
+Utilização de imagens e descrição do que foi testado.
 
 ## Banco de Dados 🗂️
-Caso tenha acesso a uma base de dados, deixe a descrição do arquivo (json, csv, xml e etc).
-json
+Banco de dados relacional, utilizando a linguagem SQL e phpMyAdmin
 
 ## Linguagens, dependencias e libs utilizadas 📚
-HTML, Javascript, CSS, Bootstrap 
+HTML, Javascript, CSS, Bootstrap, PHP 
 
 XML
 ...
