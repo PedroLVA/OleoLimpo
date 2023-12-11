@@ -1,8 +1,18 @@
 <?php
 
- $servidor = 'fdb1034.awardspace.net';
- $db_nome = '4045440_oleodobem';
- $db_senha = 'FutureMinds2023??';
- $db_usuario = '4045440_oleodobem';
- 
- $conexao = new mysqli($servidor,$db_nome,$db_senha,$db_usuario);?>
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "oleolimpo";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+echo "Connected successfully";
+
+?>
