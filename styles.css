@@ -1,0 +1,29 @@
+.block{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.alinhar{
+    width: 456px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.email-input{
+    flex-grow: 1;
+}
+
+.idade{
+    flex-basis: 100px;;
+}
+.numero-rua{
+    flex-basis: 110px;
+}
+.rua{
+    flex-basis: 195px;
+}
+
+.cep{
+    flex-basis: 130px;
+}
