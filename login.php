@@ -7,7 +7,7 @@
                 <div class="col-md-6 text-center"><img class="img-fluid w-100" src="assets/img/illustrations/Asset%201.svg"></div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start">
                     <h2 class="display-6 fw-bold mb-5"><span class="underline pb-1" style="color: rgb(1,113,61);">Conecte-se!</span></h2>
-                    <form method="post" data-bs-theme="light">
+                    <form action="includes/login.inc.php" method="post" data-bs-theme="light">
                         <div class="mb-3"><input class="shadow form-control" type="email" name="email" placeholder="E-mail"></div>
                         <div class="mb-3"><input class="shadow form-control" type="password" name="password" placeholder="Senha"></div>
                         <div class="mb-5"><button class="btn btn-primary shadow" type="submit" style="background: rgb(1,113,61);">Entrar</button></div>
