@@ -24,7 +24,27 @@
                             <button class="btn btn-primary shadow" type="submit" name="submit" style="background: rgb(1,113,61);">Criar Conta</button>
                         </div>
                     </form>
-                    <p class="text-muted">Tem uma conta?&nbsp;<a href="login.html">Entrar<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right">
+
+                    <?php 
+                        if(isset($_GET["error"])){
+                            if($_GET["error"] == "emptyinput"){
+                                echo "<p>Preencha todos os campos</p>";
+                            }
+                            else if($_GET["error"] == "passwordsdontmatch"){
+                                echo "<p>Senhas não coincidem</p>";
+                            }
+                            else if($_GET["error"] == "emailexists"){
+                                echo "<p>Email já existe</p>";
+                            }
+                            else if($_GET["error"] == "stmtfailed"){
+                                echo "<p>Algo deu errado</p>";
+                            }
+                            else if($_GET["error"] == "none"){
+                                echo "<p>Cadastrado com sucesso!</p>";
+                            }
+                        }
+                    ?>
+                    <p class="text-muted">Tem uma conta?&nbsp;<a href="login.php">Entrar<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <line x1="15" y1="16" x2="19" y2="12"></line>

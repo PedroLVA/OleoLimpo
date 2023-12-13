@@ -15,6 +15,21 @@ if(isset($_POST["submit"])){
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
+    if(emptyStringSignup($nome, $sobrenome, $email, $cep, $bairro, $rua, $numero_rua, $senha, $senha_repetir) !== false){
+        header("location: ../signup.php?error=emptyinput");
+        exit();
+    }
+
+    if(existsEmail($conn, $email) !== false){
+        header("location: ../signup.php?error=emailexists");
+        exit();
+    }
+    if(pwdMatch($senha, $senha_repetir) !== false){
+        header("location: ../signup.php?error=passwordsdontmatch");
+        exit();
+    }
+
+    createUser($conn, $nome, $sobrenome, $email, $cep, $bairro, $rua, $numero_rua, $senha);
 }
 else{
     header("location: ../signup.php");
