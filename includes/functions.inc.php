@@ -12,6 +12,21 @@ function emptyStringSignup($nome, $sobrenome, $email, $cep, $bairro, $rua, $nume
     return $resultado;
 }
 
+//Login
+
+function emptyStringLogin($email,  $senha){
+    $resultado = null;
+
+    if(empty($email) || empty($senha)){
+        $resultado = true;
+    }
+    else{
+        $resultado = false;
+    }
+
+    return $resultado;
+}
+
 function pwdMatch($senha, $senha_repetir){
     $resultado = null;
     if($senha !== $senha_repetir){
@@ -65,5 +80,30 @@ function createUser($conn, $nome, $sobrenome, $email,  $bairro, $cep, $rua, $num
     mysqli_stmt_close($stmt);
     header("location: ../signup.php?error=none");
     exit();
+}
+
+function loginUser($conn, $email, $senha){
+   $existeEmail = existsEmail($conn, $email);
+
+   if($existeEmail === false){
+    header("location: ../login.php?error=wronglogin");
+    exit();
+   }
+
+   $senhaHashed = $existeEmail["senha"];
+   $checarSenha = password_verify($senha, $senhaHashed);
+
+   if($checarSenha === false){
+    header("location: ../login.php?error=wronglogin");
+    exit();
+   }
+   else if($checarSenha === true){
+    session_start();
+    $_SESSION["iddoador"] = $existeEmail["id"];
+    $_SESSION["nomedoador"] = $existeEmail["nome"];
+    header("location: ../index.php?error=none");
+    exit();
+   }
+
 }
 

@@ -6,7 +6,14 @@
             <div class="row pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5">Óleo Usado, Futuro&nbsp; &nbsp;<span class="underline" style="color: rgb(1,113,61);"><strong>Preservado</strong></span></h1>
+                        <?php 
+                            if(isset($_SESSION["iddoador"])){
+                                echo "<h1 class='display-4 fw-bold mb-5'>Bem vindo,&nbsp; &nbsp;<span class='underline' style='color: rgb(1,113,61);'><strong>" . $_SESSION["nomedoador"] . "</strong></span></h1>";
+                            }
+                            else{
+                                echo '<h1 class="display-4 fw-bold mb-5">Óleo Usado, Futuro&nbsp; &nbsp;<span class="underline" style="color: rgb(1,113,61);"><strong>Preservado</strong></span></h1>';
+                            }
+                        ?>
                         <p class="fs-5 text-muted mb-5" style="color: #000000c0;">O projeto <strong>ÓLEO LIMPO</strong>&nbsp;tem o objetivo de conscientizar e incentivar a população a descartar corretamente o óleo de cozinha.</p>
                         <button class="btn btn-primary" data-bss-hover-animate="swing" type="submit" style="transform: scale(1.07);background: rgb(1,113,61);border-width: 0px;border-style: none;border-top-style: none;border-right-width: 0px;border-right-style: none;border-bottom-style: none;border-left-width: 0px;border-left-style: none;">Doe agora mesmo!&nbsp;</button>
                     </div>
