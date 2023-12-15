@@ -7,19 +7,50 @@
                 <div class="col-md-6 text-center"><img class="img-fluid w-100" src="assets/img/illustrations/Asset%202.svg"></div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start">
                     <h2 class="display-6 fw-bold mb-5"><span class="underline pb-1" style="color: rgb(1,113,61);">Crie Seu Acesso!</span></h2>
-                    <form action="includes/signup.inc.php" method="post" data-bs-theme="light">
+                    <form action="includes/signup.inc.php" id="address-form" method="post" data-bs-theme="light">
                         <div class="alinhar">
-                            <div class="mb-3"><input class="shadow-sm form-control" type="text" name="nome" placeholder="Nome..."></div>
-                            <div class="mb-3"><input class="shadow-sm form-control" type="text" name="sobrenome" placeholder="Sobrenome..."></div>
-                            <div class="email-input mb-3"><input class="shadow-sm form-control" type="email" name="email" placeholder="E-mail..."></div>
-                            <div class="cep mb-3"><input class="shadow-sm form-control" type="text" name="cep" placeholder="CEP..."></div>
-                            <div class="bairro mb-3"><input class="shadow-sm form-control" type="text" name="bairro" placeholder="Bairro..."></div>
-                            <div class="rua mb-3"><input class="shadow-sm form-control" type="text" name="rua" placeholder="Rua..."></div>
-                            <div class="numero-rua mb-3"><input class=" shadow-sm form-control" type="text" name="numero_rua" placeholder="Numero rua..."></div>
-                            <div class="mb-3"><input class="shadow-sm form-control" type="password" name="password" placeholder="Senha..."></div>
-                            <div class="mb-3"><input class="shadow-sm form-control" type="password" name="password_repeat" placeholder="Repetir Senha..."></div>   
-                        </div>
-                                                
+                            <div class="nome mb-3"><input class="shadow-sm form-control" type="text" name="nome" placeholder="Nome" required></div>
+                            <div class="sobrenome mb-3"><input class="shadow-sm form-control" type="text" name="sobrenome" placeholder="Sobrenome" required></div>
+                            <div class="email-input mb-3"><input class="shadow-sm form-control" type="email" name="email" placeholder="E-mail" required></div>
+                            <div class="cep mb-3"><input class="shadow-sm form-control" type="text" id="cep" name="cep" placeholder="CEP" minlength="8" maxlength="8" required></div>
+                            <div class="estado mb-3"><select class="shadow-sm form-control" type="text" id="region" name="estado" placeholder="SP" minlength="2" required disabled  data-input>
+                            <option selected>Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            </select></div>
+                        
+                            <div class="cidade mb-3"><input class="shadow-sm form-control" id="city" type="text" name="cidade" placeholder="Cidade" required disabled data-input></div>
+                            <div class="bairro mb-3"><input class="shadow-sm form-control" id="neighborhood" type="text" name="bairro" placeholder="Bairro" required disabled data-input></div>
+                            <div class="rua mb-3"><input class="shadow-sm form-control" id="address"type="text" name="rua" placeholder="Rua" required disabled data-input></div>
+                            <div class="numero-rua mb-3"><input class="shadow-sm form-control" id="number" type="text" name="numero_rua" placeholder="Número rua" required disabled data-input=""></div>
+                            <div class="senha mb-3"><input class="shadow-sm form-control" type="password" name="password" placeholder="Senha" required></div>
+                            <div class="senharepetir mb-3"><input class="shadow-sm form-control" type="password" name="password_repeat" placeholder="Repetir Senha" required></div>   
+                        </div>              
                         <div class="mb-5">
                             <button class="btn btn-primary shadow" type="submit" name="submit" style="background: rgb(1,113,61);">Criar Conta</button>
                         </div>

@@ -18,8 +18,8 @@ include_once 'header.php';
                     if ($_GET["error"] == "emptyinput") {
                         echo "<p>Preencha todos os campos</p>";
                     } else if ($_GET["error"] == "wronglogin") {
-                        echo "<p>Login Errado</p>";
-                    } else if ($_GET["error"] == "none") {
+                        echo "<p>Dados incorretos!</p>";
+                    }  else if ($_GET["error"] == "none") {
                         echo "<p>Logado com sucesso!</p>";
                     }
                 }

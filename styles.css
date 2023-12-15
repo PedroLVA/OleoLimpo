@@ -7,7 +7,7 @@
     width: 456px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
 }
 
 .email-input{
@@ -19,15 +19,26 @@
     flex-basis: 100px;;
 }
 .numero-rua{
-    flex-basis: 110px;
+    flex-grow: 1;
+    flex-basis: 80px;
+}
+
+.bairro{
+    flex-basis: 180px;
 }
 .rua{
     flex-grow: 1;
 }
-
+.cidade, .email-input, .nome, .sobrenome, .senha, .senharepetir{
+    flex-grow: 1;
+}
+.estado{
+    flex-grow: 1;
+}
 .cep{
     flex-basis: 110px;
 }
-.bairro{
-    flex-grow: 1;
+
+.mb-3 input:focus{
+    border-color: #01713D;
 }
