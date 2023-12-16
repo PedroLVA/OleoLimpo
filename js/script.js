@@ -2,12 +2,22 @@ const addressForm = document.querySelector("#address-form");
 const cepInput = document.querySelector("#cep");
 const addressInput = document.querySelector("#address");
 const cityInput = document.querySelector("#city");
+const numberInput = document.querySelector("#number");
 const neighborhoodInput = document.querySelector("#neighborhood");
 const regionInput = document.querySelector("#region");
 const formInputs = document.querySelectorAll("[data-input]");
 
 //Event listener pra não deixar o usuario colocar nada além de numeros
 cepInput.addEventListener("keypress", (e) => {
+    const onlyNumbers = /[0-9]|\./;
+    const key = String.fromCharCode(e.keyCode);
+    if (!onlyNumbers.test(key)) {
+        e.preventDefault();
+        return;
+    }
+});
+
+numberInput.addEventListener("keypress", (e) => {
     const onlyNumbers = /[0-9]|\./;
     const key = String.fromCharCode(e.keyCode);
     if (!onlyNumbers.test(key)) {

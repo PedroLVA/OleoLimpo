@@ -13,7 +13,7 @@
                             <div class="sobrenome mb-3"><input class="shadow-sm form-control" type="text" name="sobrenome" placeholder="Sobrenome" required></div>
                             <div class="email-input mb-3"><input class="shadow-sm form-control" type="email" name="email" placeholder="E-mail" required></div>
                             <div class="cep mb-3"><input class="shadow-sm form-control" type="text" id="cep" name="cep" placeholder="CEP" minlength="8" maxlength="8" required></div>
-                            <div class="estado mb-3"><select class="shadow-sm form-control" type="text" id="region" name="estado" placeholder="SP" minlength="2" required disabled  data-input>
+                            <div class="estado mb-3"><select class="shadow-sm form-control cep-input" type="text" id="region" name="estado" placeholder="SP" minlength="2" required disabled  data-input>
                             <option selected>Estado</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -44,10 +44,10 @@
                             <option value="TO">Tocantins</option>
                             </select></div>
                         
-                            <div class="cidade mb-3"><input class="shadow-sm form-control" id="city" type="text" name="cidade" placeholder="Cidade" required disabled data-input></div>
-                            <div class="bairro mb-3"><input class="shadow-sm form-control" id="neighborhood" type="text" name="bairro" placeholder="Bairro" required disabled data-input></div>
-                            <div class="rua mb-3"><input class="shadow-sm form-control" id="address"type="text" name="rua" placeholder="Rua" required disabled data-input></div>
-                            <div class="numero-rua mb-3"><input class="shadow-sm form-control" id="number" type="text" name="numero_rua" placeholder="Número rua" required disabled data-input=""></div>
+                            <div class="cidade mb-3"><input class="shadow-sm form-control cep-input" id="city" type="text" name="cidade" placeholder="Cidade" required disabled data-input></div>
+                            <div class="bairro mb-3"><input class="shadow-sm form-control cep-input" id="neighborhood" type="text" name="bairro" placeholder="Bairro" required disabled data-input></div>
+                            <div class="rua mb-3"><input class="shadow-sm form-control cep-input" id="address"type="text" name="rua" placeholder="Rua" required disabled data-input></div>
+                            <div class="numero-rua mb-3"><input class="shadow-sm form-control cep-input" id="number" type="text" name="numero_rua" placeholder="Número rua" required disabled data-input=""></div>
                             <div class="senha mb-3"><input class="shadow-sm form-control" type="password" name="password" placeholder="Senha" required></div>
                             <div class="senharepetir mb-3"><input class="shadow-sm form-control" type="password" name="password_repeat" placeholder="Repetir Senha" required></div>   
                         </div>              

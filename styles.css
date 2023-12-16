@@ -38,7 +38,13 @@
 .cep{
     flex-basis: 110px;
 }
-
+.mb-3 input, .mb-3 select {
+    border-width: 2px;
+}
 .mb-3 input:focus{
+    border-color: #01713D;
+}
+
+.cep-input{
     border-color: #01713D;
 }

@@ -6,6 +6,8 @@ if(isset($_POST["submit"])){
     $sobrenome = $_POST["sobrenome"];
     $email = $_POST["email"];
     $cep = $_POST["cep"];
+    $estado = $_POST["estado"];
+    $cidade = $_POST["cidade"];
     $bairro = $_POST["bairro"];
     $rua = $_POST["rua"];
     $numero_rua = $_POST["numero_rua"];
@@ -15,7 +17,7 @@ if(isset($_POST["submit"])){
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
-    if(emptyStringSignup($nome, $sobrenome, $email, $cep, $bairro, $rua, $numero_rua, $senha, $senha_repetir) !== false){
+    if(emptyStringSignup($nome, $sobrenome, $email, $cep, $estado, $cidade, $bairro, $rua, $numero_rua, $senha, $senha_repetir) !== false){
         header("location: ../signup.php?error=emptyinput");
         exit();
     }
@@ -29,7 +31,7 @@ if(isset($_POST["submit"])){
         exit();
     }
 
-    createUser($conn, $nome, $sobrenome, $email, $cep, $bairro, $rua, $numero_rua, $senha);
+    createUser($conn, $nome, $sobrenome, $email, $cep, $estado, $cidade, $bairro, $rua, $numero_rua, $senha);
 }
 else{
     header("location: ../signup.php");
