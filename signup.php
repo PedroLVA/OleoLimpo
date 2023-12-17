@@ -48,8 +48,9 @@
                             <div class="bairro mb-3"><input class="shadow-sm form-control cep-input" id="neighborhood" type="text" name="bairro" placeholder="Bairro" required disabled data-input></div>
                             <div class="rua mb-3"><input class="shadow-sm form-control cep-input" id="address"type="text" name="rua" placeholder="Rua" required disabled data-input></div>
                             <div class="numero-rua mb-3"><input class="shadow-sm form-control cep-input" id="number" type="text" name="numero_rua" placeholder="Número rua" required disabled data-input=""></div>
-                            <div class="senha mb-3"><input class="shadow-sm form-control" type="password" name="password" placeholder="Senha" required></div>
+                            <div class="senha mb-3"><input class="shadow-sm form-control" id="senha" type="password" name="password" placeholder="Senha" required></div>
                             <div class="senharepetir mb-3"><input class="shadow-sm form-control" type="password" name="password_repeat" placeholder="Repetir Senha" required></div>   
+                            <p id="showPwmMessage"></p>
                         </div>              
                         <div class="mb-5">
                             <button class="btn btn-primary shadow" type="submit" name="submit" style="background: rgb(1,113,61);">Criar Conta</button>

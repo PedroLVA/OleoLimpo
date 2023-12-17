@@ -4,8 +4,11 @@ const addressInput = document.querySelector("#address");
 const cityInput = document.querySelector("#city");
 const numberInput = document.querySelector("#number");
 const neighborhoodInput = document.querySelector("#neighborhood");
+const password = document.getElementById("senha")
 const regionInput = document.querySelector("#region");
 const formInputs = document.querySelectorAll("[data-input]");
+const inputSenha = document.getElementById("senha");
+const textError = document.getElementById("showPwmMessage");
 
 //Event listener pra não deixar o usuario colocar nada além de numeros
 cepInput.addEventListener("keypress", (e) => {
@@ -16,6 +19,38 @@ cepInput.addEventListener("keypress", (e) => {
         return;
     }
 });
+
+//senha related eventlisteners
+const handleKeyup = (e) => {
+    const inputValue = e.target.value;
+
+    if (inputValue.length < 8) {
+        textError.textContent = "A senha precisa ter pelo menos 8 dígitos";
+        inputSenha.classList.add("red-border");
+    } else {
+        handleBlur();
+    }
+};
+
+const handleFocus = (e) => {
+    const inputValue = e.target.value;
+
+    if (inputValue.length < 8) {
+        textError.textContent = "A senha precisa ter pelo menos 8 dígitos";
+        inputSenha.classList.add("red-border");
+    }
+};
+
+const handleBlur = () => {
+    inputSenha.classList.remove("red-border");
+    textError.textContent = "";
+};
+
+password.addEventListener("keyup", handleKeyup);
+password.addEventListener("focus", handleFocus);
+password.addEventListener("blur", handleBlur);
+//senha related eventlisteners
+
 
 numberInput.addEventListener("keypress", (e) => {
     const onlyNumbers = /[0-9]|\./;
@@ -40,7 +75,6 @@ cepInput.addEventListener("keyup", (e) => {
 
 const getAddress = async (cep) => {
     cepInput.blur();
-
     const apiUrl = `https://viacep.com.br/ws/${cep}/json/`;
 
     try {
@@ -70,19 +104,39 @@ const getAddress = async (cep) => {
             toggleDisabled();
         }
 
+        formInputs.forEach(input => {
+            input.classList.add("cep-input-color");
+        });
+
         addressInput.value = data.logradouro;
         cityInput.value = data.localidade;
         neighborhoodInput.value = data.bairro;
         regionInput.value = data.uf;
-    } catch (error) {
-        // Handle fetch errors
-        console.error("Error fetching CEP:", error);
 
-        // Show a simple alert for fetch errors
+      
+
+       
+
+    } catch (error) {
+        console.error("Error fetching CEP:", error);
         alert("Ocorreu um erro ao buscar o CEP. Por favor, tente novamente.");
+
+        formInputs.forEach(input => {
+            input.classList.remove("cep-input-color");
+        });
     }
 }
 
+
+//itera os inputs da classe formInputs e retira a classe que deixa a borda verde
+formInputs.forEach(input => {
+    input.addEventListener("focus", () => {
+       
+        formInputs.forEach(input => {
+            input.classList.remove("cep-input-color");
+        });
+    });
+});
 
 const toggleDisabled = () => {
     if (regionInput.hasAttribute("disabled")) {

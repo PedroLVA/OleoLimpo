@@ -78,7 +78,7 @@ function createUser($conn, $nome, $sobrenome, $email, $cep, $estado, $cidade, $b
     mysqli_stmt_bind_param($stmt, "ssssssssss", $nome, $sobrenome, $email, $cep, $estado, $cidade, $bairro, $rua, $numero_rua, $hashedSenha);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../signup.php?error=none");
+    header("location: ../login.php?error=none");
     exit();
 }
 

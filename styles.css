@@ -45,6 +45,9 @@
     border-color: #01713D;
 }
 
-.cep-input{
+.cep-input-color{
     border-color: #01713D;
+}
+.red-border{
+    border-color: red !important;
 }
