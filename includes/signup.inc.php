@@ -17,6 +17,7 @@ if(isset($_POST["submit"])){
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
+
     if(emptyStringSignup($nome, $sobrenome, $email, $cep, $estado, $cidade, $bairro, $rua, $numero_rua, $senha, $senha_repetir) !== false){
         header("location: ../signup.php?error=emptyinput");
         exit();
@@ -32,6 +33,7 @@ if(isset($_POST["submit"])){
     }
 
     createUser($conn, $nome, $sobrenome, $email, $cep, $estado, $cidade, $bairro, $rua, $numero_rua, $senha);
+
 }
 else{
     header("location: ../signup.php");

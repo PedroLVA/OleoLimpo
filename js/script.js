@@ -1,3 +1,4 @@
+
 const addressForm = document.querySelector("#address-form");
 const cepInput = document.querySelector("#cep");
 const addressInput = document.querySelector("#address");
@@ -9,6 +10,22 @@ const regionInput = document.querySelector("#region");
 const formInputs = document.querySelectorAll("[data-input]");
 const inputSenha = document.getElementById("senha");
 const textError = document.getElementById("showPwmMessage");
+
+
+
+
+//popup
+
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+//popup
+
 
 //Event listener pra não deixar o usuario colocar nada além de numeros
 cepInput.addEventListener("keypress", (e) => {
@@ -149,3 +166,6 @@ const toggleDisabled = () => {
       });
     }
   };
+
+
+

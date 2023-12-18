@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="assets/css/Raleway.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="js/script.js" defer></script>
 </head>
 
 <body>

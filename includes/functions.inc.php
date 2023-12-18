@@ -63,7 +63,6 @@ function existsEmail($conn, $email){
     mysqli_stmt_close($stmt);
 }
 
-
 function createUser($conn, $nome, $sobrenome, $email, $cep, $estado, $cidade, $bairro, $rua, $numero_rua, $senha){
     $sql = "INSERT INTO doador (nome, sobrenome, email, cep, estado, cidade, bairro, rua, rua_numero, senha) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
@@ -78,7 +77,7 @@ function createUser($conn, $nome, $sobrenome, $email, $cep, $estado, $cidade, $b
     mysqli_stmt_bind_param($stmt, "ssssssssss", $nome, $sobrenome, $email, $cep, $estado, $cidade, $bairro, $rua, $numero_rua, $hashedSenha);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../login.php?error=none");
+    header("location: ../signup.php?error=none");
     exit();
 }
 
@@ -101,7 +100,9 @@ function loginUser($conn, $email, $senha){
     session_start();
     $_SESSION["iddoador"] = $existeEmail["id"];
     $_SESSION["nomedoador"] = $existeEmail["nome"];
+    
     header("location: ../index.php?error=none");
+    
     exit();
    }
 
