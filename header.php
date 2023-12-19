@@ -7,7 +7,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Sign up - Óleo Limpo</title>
     <meta name="description" content="O projeto ÓLEO DO BEM tem o objetivo de conscientizar e incentivar a população a descartar corretamente o óleo de cozinha, minimizando impactos ambientais e colaborando com uma educação ambiental ampla e efetiva.">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Raleway.css">
@@ -22,7 +21,7 @@
                 <ul class="navbar-nav mx-auto"></ul>
                 <?php 
                     if(isset($_SESSION["iddoador"])){
-                        echo "<a class='btn btn-primary shadow' role='button' href='signup.php' style='margin-right: 6px;background: #00000000;color: var(--bs-body-color);'>Fazer doação</a>";
+                        echo "<a class='btn btn-primary shadow' role='button' href='cad-oil.php' style='margin-right: 6px;background: #00000000;color: var(--bs-body-color);'>Fazer doação</a>";
                         echo "<a class='btn btn-primary shadow' role='button' href='includes/logout.inc.php' style='background: rgb(1,113,61);'>Sair<svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icon-tabler-user' data-bss-hover-animate='swing' style='margin-left: 2px;'>
                         ";
                     }

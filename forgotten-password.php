@@ -1,6 +1,7 @@
 <?php 
     include_once 'header.php';
 ?>
+<title>Esqueci a senha - Oleo Limpo</title>
     <section class="py-4 py-md-5 mt-5">
         <div class="container py-md-5">
             <div class="row d-flex align-items-center">

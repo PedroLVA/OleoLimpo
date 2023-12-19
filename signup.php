@@ -1,7 +1,8 @@
 <?php
 include_once 'header.php';
 ?>
-<script src="js/script.js" defer></script>
+<title>Signup - Oleo Limpo</title>
+
 <section class="py-4 py-md-5 my-5">
     <div class="container py-md-5">
         <div class="row">
@@ -94,6 +95,7 @@ include_once 'header.php';
 <?php
 include_once 'footer.php';
 ?>
+<script src="js/script.js" defer></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/bs-init.js"></script>
 <script src="assets/js/startup-modern.js"></script>

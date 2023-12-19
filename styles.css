@@ -93,3 +93,7 @@
     cursor: pointer;
 }
 /* popup */
+
+.form-holder{
+    margin-top: 6% !important;
+}
