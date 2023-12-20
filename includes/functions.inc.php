@@ -108,3 +108,37 @@ function loginUser($conn, $email, $senha){
 
 }
 
+function sendImage($fileTmpName, $fileSize, $fileError, $fileActualExt, $allowed, $fileDestination){
+    if (in_array($fileActualExt, $allowed)) {
+        if ($fileError === 0) {
+            if ($fileSize < 10000000) {
+                //dando nome unico pra foto
+                move_uploaded_file($fileTmpName, $fileDestination);
+                header("Location: ../cad-oil.php?uploadsucess");
+            } else {
+                echo "Seu arquivo é muito grande";
+            }
+        } else {
+            echo "Ocorreu um erro ao dar upload no arquivo";
+        }
+    } else {
+        echo "Arquivo não permitido";
+    }
+}
+
+function sendDonationData($qtdOleo, $fileDestination, $infoAdicional, $iddoador, $conn){
+    $sql = "INSERT INTO doacao (quantidade_oleo, image_filepath, informacao_adicional, id_doador) values(?, ?, ?, ?);";
+    $stmt = mysqli_stmt_init($conn);
+
+    if(!mysqli_stmt_prepare($stmt, $sql)){
+        header("location: ../cad-oil.php?error=stmtfailed");
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "dssi", $qtdOleo, $fileDestination, $infoAdicional, $iddoador);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+    echo "id doador: " .  $iddoador;
+    exit();
+}
+
