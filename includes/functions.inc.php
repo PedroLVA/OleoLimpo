@@ -114,7 +114,7 @@ function sendImage($fileTmpName, $fileSize, $fileError, $fileActualExt, $allowed
             if ($fileSize < 10000000) {
                 //dando nome unico pra foto
                 move_uploaded_file($fileTmpName, $fileDestination);
-                header("Location: ../cad-oil.php?uploadsucess");
+                header("Location: ../cad-oil.php?error=none");
             } else {
                 echo "Seu arquivo é muito grande";
             }
@@ -138,7 +138,6 @@ function sendDonationData($qtdOleo, $fileDestination, $infoAdicional, $iddoador,
     mysqli_stmt_bind_param($stmt, "dssi", $qtdOleo, $fileDestination, $infoAdicional, $iddoador);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    echo "id doador: " .  $iddoador;
     exit();
 }
 

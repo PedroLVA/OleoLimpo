@@ -24,12 +24,10 @@ if (isset($_POST["submit"])) {
     $qtdOleo = $_POST["qtdOleo"];
     $infoAdicional = $_POST["infoAdicional"];
 
+    sendImage($fileTmpName, $fileSize, $fileError, $fileActualExt, $allowed, $fileDestination);
     sendDonationData($qtdOleo, $fileDestination, $infoAdicional, $_SESSION["iddoador"], $conn);
 
-
     
-
-    sendImage($fileTmpName, $fileSize, $fileError, $fileActualExt, $allowed, $fileDestination);
 
     
     

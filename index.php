@@ -49,23 +49,7 @@ include_once 'header.php';
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card border-light border-1 d-flex justify-content-center p-4" data-bss-hover-animate="bounce">
-                    <div class="card-body">
-                        <div class="bs-icon-lg bs-icon-rounded bs-icon-secondary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-4 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-bike" data-bss-hover-animate="tada">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <circle cx="5" cy="18" r="3"></circle>
-                                <circle cx="19" cy="18" r="3"></circle>
-                                <polyline points="12 19 12 15 9 12 14 8 16 11 19 11"></polyline>
-                                <circle cx="17" cy="5" r="1"></circle>
-                            </svg></div>
-                        <div>
-                            <h4 class="fw-bold">Coleta</h4>
-                            <p class="text-muted">A coleta será feita pela nossa equipe.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
             <div class="col">
                 <div class="card border-light border-1 d-flex justify-content-center p-4" data-bss-hover-animate="bounce">
                     <div class="card-body">
@@ -100,7 +84,8 @@ include_once 'header.php';
                 <div>
                     <div class="row gy-2 row-cols-1 row-cols-sm-2">
                         <div class="col text-center text-md-start">
-                            <div class="d-flex justify-content-center align-items-center justify-content-md-start"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-trees fs-3 text-primary bg-secondary">
+                            <div class="d-flex justify-content-center align-items-center justify-content-md-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-trees fs-3 text-primary bg-secondary">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <rect x="4" y="3" width="8" height="14" rx="4"></rect>
                                     <rect x="12" y="7" width="8" height="10" rx="3"></rect>

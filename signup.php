@@ -95,7 +95,7 @@ include_once 'header.php';
 <?php
 include_once 'footer.php';
 ?>
-<script src="js/script.js" defer></script>
+<script src="js/signupScript.js" defer></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/bs-init.js"></script>
 <script src="assets/js/startup-modern.js"></script>
