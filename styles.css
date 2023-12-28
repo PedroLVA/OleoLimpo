@@ -106,9 +106,9 @@
 }
 
 .card-img-top {
-    width: 100%; /* Set a fixed width, adjust as needed */
-    height: 200px; /* Set a fixed height, adjust as needed */
-    object-fit: cover; /* Resize and crop image to cover the specified dimensions */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
   }
 
   .card{
