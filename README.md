@@ -88,13 +88,6 @@ Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementada
 ## Desenvolvedores/Contribuintes:
 Pedro Luiz Vidal Athayde,  pedro_athayde@outlook.com,
 
-Maria Eduarda Cardoso de Souza, meduardacardoso.121@gmail.com
-
-Fernando Soares Barbosa, barsoaf@gmail.com
-
-Maycon Willyan Foro Gomes, mayconwillyanforo@gmail.com
-
-Raphael Carneiro Gomes, carneirogomesraphael@gmail.com
 
 ## Licença
 The MIT License (MIT)
