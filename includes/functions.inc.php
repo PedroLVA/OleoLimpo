@@ -112,7 +112,6 @@ function sendImage($fileTmpName, $fileSize, $fileError, $fileActualExt, $allowed
     if (in_array($fileActualExt, $allowed)) {
         if ($fileError === 0) {
             if ($fileSize < 10000000) {
-                //dando nome unico pra foto
                 move_uploaded_file($fileTmpName, $fileDestination);
                 header("Location: ../cad-oil.php?error=none");
             } else {

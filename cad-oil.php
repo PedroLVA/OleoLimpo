@@ -32,6 +32,7 @@ if (!isset($_SESSION["iddoador"])) {
     </div>
 
     <button class="btn btn-primary shadow" type="submit" name="submit" style="background: rgb(1,113,61);">Cadastrar</button>
+</div>
     <?php
     if (isset($_GET["error"])) {
       if ($_GET["error"] == "stmtfailed") {

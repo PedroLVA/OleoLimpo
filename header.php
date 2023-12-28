@@ -23,6 +23,7 @@ session_start();
 
                     <?php
                     if (isset($_SESSION["iddoador"])) {
+                        echo "<a class='btn btn-primary shadow' role='button' href='doacoes-usuario.php' style='margin-right: 6px;background: #00000000;color: var(--bs-body-color);'>Ver doações</a>";
                         echo "<a class='btn btn-primary shadow' role='button' href='cad-oil.php' style='margin-right: 6px;background: #00000000;color: var(--bs-body-color);'>Fazer doação</a>";
                         echo "<a class='btn btn-primary shadow' role='button' href='includes/logout.inc.php' style='background: rgb(1,113,61);
                         '>Sair<svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' 

@@ -16,6 +16,7 @@ if (isset($_POST["submit"])) {
     $fileActualExt = strtolower(end($fileExt));
     $fileNameNew = uniqid('', true) . "." . $fileActualExt;
     $fileDestination = "../images/".$fileNameNew;
+    $relativeFileDestination = "images/".$fileNameNew;
 
     //array de extensão permitida
     $allowed = array("png", "jpg", "jpeg");
@@ -25,7 +26,7 @@ if (isset($_POST["submit"])) {
     $infoAdicional = $_POST["infoAdicional"];
 
     sendImage($fileTmpName, $fileSize, $fileError, $fileActualExt, $allowed, $fileDestination);
-    sendDonationData($qtdOleo, $fileDestination, $infoAdicional, $_SESSION["iddoador"], $conn);
+    sendDonationData($qtdOleo, $relativeFileDestination, $infoAdicional, $_SESSION["iddoador"], $conn);
 
     
 

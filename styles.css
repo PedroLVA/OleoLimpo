@@ -51,7 +51,9 @@
 .red-border{
     border-color: red !important;
 }
-
+.yellow{
+    color: #fdb913;
+}
 /* popup */
 .modal {
     display: none;
@@ -94,3 +96,23 @@
 .form-holder{
     margin-top: 6% !important;
 }
+
+.cards-container{
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.card-img-top {
+    width: 100%; /* Set a fixed width, adjust as needed */
+    height: 200px; /* Set a fixed height, adjust as needed */
+    object-fit: cover; /* Resize and crop image to cover the specified dimensions */
+  }
+
+  .card{
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
