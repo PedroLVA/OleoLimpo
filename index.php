@@ -9,7 +9,7 @@ include_once 'header.php';
                 <div class="text-center">
                     <?php
                     if (isset($_SESSION["iddoador"])) {
-                        echo "<h1 class='display-4 fw-bold mb-5'>Bem vindo,&nbsp; &nbsp;<span class='underline' style='color: rgb(1,113,61);'><strong>" . $_SESSION["nomedoador"] . "</strong></span></h1>";
+                        echo "<h1 class='display-4 fw-bold mb-5'>Bem vindo,&nbsp;&nbsp;<span class='underline' style='color: rgb(1,113,61);'><strong>".$_SESSION["nomedoador"]."</strong></span></h1>";
                     } else {
                         echo '<h1 class="display-4 fw-bold mb-5">Óleo Usado, Futuro&nbsp; &nbsp;<span class="underline" style="color: rgb(1,113,61);"><strong>Preservado</strong></span></h1>';
                     }
@@ -24,6 +24,7 @@ include_once 'header.php';
                             ?>><button class="btn btn-primary" data-bss-hover-animate="swing" type="submit" style="transform: scale(1.07);background: rgb(1,113,61);border-width: 0px;border-style: none;border-top-style: none;border-right-width: 0px;border-right-style: none;border-bottom-style: none;border-left-width: 0px;border-left-style: none;">Doe agora mesmo!&nbsp;</button></a>
                 </div>
             </div>
+            
             <div class="col-12 col-lg-10 mx-auto">
                 <div class="text-center position-relative"><img class="img-fluid" src="assets/img/illustrations/Asset%201@4x-8.png" style="width: 675px;margin: 19px;" width="800" height="709"></div>
             </div>

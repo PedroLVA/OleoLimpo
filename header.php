@@ -20,15 +20,21 @@ session_start();
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><a href="index.php"><img src="assets/img/LOGO-OLEO-LIMPO.png" width="171" height="36"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav mx-auto"></ul>
-
                     <?php
                     if (isset($_SESSION["iddoador"])) {
-                        echo "<a class='btn btn-primary shadow' role='button' href='doacoes-usuario.php' style='margin-right: 6px;background: #00000000;color: var(--bs-body-color);'>Ver doações</a>";
-                        echo "<a class='btn btn-primary shadow' role='button' href='cad-oil.php' style='margin-right: 6px;background: #00000000;color: var(--bs-body-color);'>Fazer doação</a>";
-                        echo "<a class='btn btn-primary shadow' role='button' href='includes/logout.inc.php' style='background: rgb(1,113,61);
-                        '>Sair<svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' 
-                        stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icon-tabler-user' data-bss-hover-animate='swing' style='margin-left: 2px;'>
-                        ";
+                        echo "
+                        <div class='dropdown'>
+                            <a class='btn btn-secondary dropdown-toggle' style='background: rgb(1,113,61); color: white; border-color: white;: none;' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                                Gerenciar
+                            </a>
+
+                            <ul class='dropdown-menu'>
+                                <li><a class='dropdown-item' href='cad-oil.php'>Doar</a></li>
+                                <li><a class='dropdown-item' href='doacoes-usuario.php'>Ver doações</a></li>
+                                <li><a class='dropdown-item' href='includes/logout.inc.php'>Sair</a></li>
+                            </ul>
+                        </div>
+                            ";
                     } else {
                         echo "<a class='btn btn-primary shadow' role='button' href='signup.php' style='margin-right: 6px;background: #00000000;color: var(--bs-body-color);'>Inscreva-se</a>";
                         echo "<a class='btn btn-primary shadow' role='button' href='login.php' style='background: rgb(1,113,61);'>Entrar<svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icon-tabler-user' data-bss-hover-animate='swing' style='margin-left: 2px;'>

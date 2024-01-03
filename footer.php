@@ -24,7 +24,6 @@
         </div>
     </div>
 </footer>
-<script src="assets/bootstrap/css/bootstrap.min.css"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/lottie-player.min.js"></script>
 <script src="assets/js/bs-init.js"></script>
