@@ -67,6 +67,9 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+#mainNav{
+    z-index: 5;
+}
 
 .modal-content {
     border-radius: 10px;
@@ -115,5 +118,26 @@
   .card{
     border-radius: 10px;
     overflow: hidden;
+  }
+
+  .size{
+    
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+
+  }
+.inline{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+  .imageholder{
+    float: right;
+  }
+
+  .cor{
+    background-color: red;
   }
 

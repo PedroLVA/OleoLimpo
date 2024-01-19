@@ -1,6 +1,6 @@
 
 const addressForm = document.querySelector("#address-form");
-const cepInput = document.querySelector("#cep");
+const cepInput = document.getElementById("cep");
 const addressInput = document.querySelector("#address");
 const cityInput = document.querySelector("#city");
 const numberInput = document.querySelector("#number");
@@ -10,8 +10,6 @@ const regionInput = document.querySelector("#region");
 const formInputs = document.querySelectorAll("[data-input]");
 const inputSenha = document.getElementById("senha");
 const textError = document.getElementById("showPwmMessage");
-
-
 
 
 //popup
@@ -104,14 +102,12 @@ const getAddress = async (cep) => {
         const data = await response.json();
 
         if (data.erro) {
-            // Invalid CEP
-            addressForm.reset();
+            cepInput.value = "";
 
             if (!addressInput.hasAttribute("disabled")) {
                 toggleDisabled();
             }
 
-            // Show a simple alert
             alert("CEP inválido. Por favor, insira um CEP válido.");
 
             return;
@@ -130,9 +126,9 @@ const getAddress = async (cep) => {
         neighborhoodInput.value = data.bairro;
         regionInput.value = data.uf;
 
-      
 
-       
+
+
 
     } catch (error) {
         console.error("Error fetching CEP:", error);
@@ -148,7 +144,7 @@ const getAddress = async (cep) => {
 //itera os inputs da classe formInputs e retira a classe que deixa a borda verde
 formInputs.forEach(input => {
     input.addEventListener("focus", () => {
-       
+
         formInputs.forEach(input => {
             input.classList.remove("cep-input-color");
         });
@@ -157,15 +153,15 @@ formInputs.forEach(input => {
 
 const toggleDisabled = () => {
     if (regionInput.hasAttribute("disabled")) {
-      formInputs.forEach((input) => {
-        input.removeAttribute("disabled");
-      });
+        formInputs.forEach((input) => {
+            input.removeAttribute("disabled");
+        });
     } else {
-      formInputs.forEach((input) => {
-        input.setAttribute("disabled", "disabled");
-      });
+        formInputs.forEach((input) => {
+            input.setAttribute("disabled", "disabled");
+        });
     }
-  };
+};
 
 
 

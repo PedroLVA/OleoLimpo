@@ -9,7 +9,6 @@ $allDonations = mysqli_query($conn, $sql);
 <div class="form-holder container">
     
     <h2 class="display-6 fw-bold mb-5"><span class="underline pb-1" style="color: rgb(1,113,61);">Minhas doações</span></h2>
-    <h2 style="text-align: center; ">Você já doou: X litros de óleo</h2>
     
     <div class="cards-container">
         <?php
