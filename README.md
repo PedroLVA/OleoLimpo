@@ -36,3 +36,9 @@ HTML, Javascript, CSS, Bootstrap, PHP
 The MIT License (MIT)
 
 ## Copyright ©️ 2024 - Óleo Limpo
+![image](https://github.com/PedroLVA/OleoLimpo/assets/130158934/75b92c97-ce97-4326-8ad2-f0f737befd72)
+![image](https://github.com/PedroLVA/OleoLimpo/assets/130158934/44336884-94ec-4080-a8bf-ad0093591c9d)
+![image](https://github.com/PedroLVA/OleoLimpo/assets/130158934/203e93b7-1c82-4eb4-863d-2341f91986c6)
+![image](https://github.com/PedroLVA/OleoLimpo/assets/130158934/c9c58880-8aa6-4cdc-9970-db47c450fe69)
+
+
